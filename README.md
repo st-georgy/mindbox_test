@@ -12,6 +12,10 @@
 - [AreaCalculator.cs](GeometryLibrary/AreaCalculator.cs) - Статический класс для вычисления площади неизвестной фигуры в compile-time
 - [Figures/](GeometryLibrary/Figures/) - Реализации встроенных в библиотеку фигур
 
+Реализация тестов:
+- [Tests.AreaCalculator](GeometryLibrary.Tests/AreaCalculator) - Тесты для статического класса подсчета площади фигуры
+- [Tests.Figures](GeometryLibrary.Tests/Figures) - Тесты для встроенных в библиотеку фигур
+
 ### Задание 2
 
 Запрос к базе данных MS SQL Server
@@ -24,6 +28,10 @@
 
 - [test_tables.sql](/test_tables.sql) - Создание тестовой базы данных и таблиц
 
+Схема тестовой БД:
+
+![sql scheme](images/scheme.png)
+
 Результат выполнения запроса в тестовой БД:
 
-![sql task](/sql.png)
+![sql task](images/sql.png)

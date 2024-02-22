@@ -17,10 +17,10 @@ namespace GeometryLibrary.Figures
         /// <exception cref="ArgumentException">Thrown when the radius is not greater than zero.</exception>
         public Circle(double radius)
         {
+            Radius = radius;
+
             if (!IsValid())
                 throw new ArgumentException("Impossible to create circle. Radius must be greater than zero.");
-
-            Radius = radius;
         }
 
         /// <inheritdoc/>

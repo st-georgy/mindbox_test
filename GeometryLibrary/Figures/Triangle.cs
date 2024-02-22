@@ -29,12 +29,12 @@ namespace GeometryLibrary.Figures
         /// <exception cref="ArgumentException">Thrown when the side lengths do not form a valid triangle, or when any of sides is not greated than zero.</exception>
         public Triangle(double sideA, double sideB, double sideC)
         {
-            if (!IsValid())
-                throw new ArgumentException("Impossible to create triangle. Triangle sides do not form a valid triangle.");
-
             SideA = sideA;
             SideB = sideB;
             SideC = sideC;
+
+            if (!IsValid())
+                throw new ArgumentException("Impossible to create triangle. Triangle sides do not form a valid triangle.");
         }
 
         /// <inheritdoc/>
